@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    margin: 0px;
 }
 
 :root {
@@ -27,35 +28,41 @@ html {
 
 body {
     background-color: #dfb9b9;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 #logo {
-    height: auto;
-    width: auto;
+    height: 10vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
+
 
 #menu-area nav {
     display: grid;
-    grid-template-columns: 0.5fr 1.3fr 0.1fr;
+    grid-template-columns: 0.5fr 1.3fr;
     gap: 3rem;
     background-color: var(--cor-fundo-site);
     position: fixed;
     top: 0;
     width: 100%;
+    height: 10vh;
     z-index: 1000;
 }
 
-#menu-area nav ul {
+#menu-area ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-
 }
 
-#menu-area nav ul li .links {
+#menu-area ul li .links {
     margin: 0.5em;
     padding: 0.4em;
     font-size: 1.4rem;
@@ -69,7 +76,7 @@ body {
     color: var(--cor-hover)
 }
 
-#menu-area nav picture img {
+#menu-area picture img {
     max-height: 10vh;
     width: auto;
 }
@@ -122,8 +129,12 @@ body {
 
 .quadro-acao,
 .subtitulo {
-    padding: 1em;
+    padding: 0.7em;
     font-size: 1.4em;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .titulo {
@@ -156,14 +167,19 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.area-img-metrica,
-img {
+.area-img-metrica {
     height: 10rem;
     width: 10rem;
+    display: flex;
+    justify-content: center;
 }
 
-.metricas,
-picture {
+.img-metrica {
+    width: auto;
+    height: 75%;
+}
+
+.metricas {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -172,11 +188,13 @@ picture {
 }
 
 .quantidade {
-    padding: 0.5rem;
+    padding: 0.2rem;
+    font-size: 2em;
 }
 
 h1,
-h2 {
+h2,
+h3 {
     text-align: center;
     padding: 0.4em;
     width: 100%;
@@ -202,11 +220,9 @@ h2 {
     justify-content: center;
 }
 
-#imgrafico,
-img {
+#imgrafico {
     height: 90%;
     width: 60%;
-
 }
 
 
@@ -236,7 +252,7 @@ img {
 .bi {
     width: 4em;
     height: 4em;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .area-bloco {
@@ -282,6 +298,10 @@ img {
     margin: 1rem;
 }
 
+#texto-subt-doacao {
+    font-size: 1.2rem;
+}
+
 #texto-titulo,
 #area-botao-doacao {
     text-align: start;
@@ -295,10 +315,11 @@ img {
     text-decoration: none;
     color: #550202;
 
-    
+
 }
-#link-doacao:hover{
-     color: rgb(58, 100, 60)
+
+#link-doacao:hover {
+    color: rgb(58, 100, 60)
 }
 
 #botao-body {
@@ -310,6 +331,7 @@ img {
     padding: 5px;
     justify-content: space-between;
 }
+
 #botao-body:hover {
     border: 2px solid rgb(92, 247, 100);
 }
@@ -321,6 +343,56 @@ img {
     padding: 0.1em;
     color: #e0e0e0;
 }
-#bi-arrow-right-short:hover{
-    color:rgb(78, 119, 80);
+
+#bi-arrow-right-short:hover {
+    color: rgb(78, 119, 80);
+}
+
+
+
+#area-inicio-doacao-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#img-inicio-doacao {
+    width: 100%;
+    height: 100%;
+}
+
+.img-inicio-doacao {
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+#section-footer{
+    height: 40vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#section-area-footer{
+ display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+#area-logo-infos{
+    width: 100%;
+    height: 50%;
+}
+
+
+#logo-footer{
+    height: 300px;
+    width: 300px;
 }
