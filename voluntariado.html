@@ -1,1 +1,80 @@
-<!--trasparência-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>Seja Voluntário</title>
+    <link rel="stylesheet" href="voluntariado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="menu-area">
+        <nav>
+            <a href="inicio.html" id="logo"><img src="img/logo.png" alt="Amigo Fiel" loading="lazy" id="img-logo"></a>
+            <ul>
+                <li><a href="inicio.html" class="links">Início</a></li>
+                <li><a href="sobre.html" class="links">Sobre Nós</a></li>
+                <li><a href="projetos.html" class="links">Projetos</a></li>
+                <li><a href="transparencia.html" class="links">Transparência</a></li>
+                <li><a href="voluntariado.html" class="links">Seja Voluntário</a></li>
+                <li><a href="contato.html" class="links">Contato</a></li>
+                <li><a href="blog.html" class="links">Blog</a></li>
+                <li><a href="doacoes.html" id="money" class="links">Faça uma doação</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="section-area-volutarios">
+            <div id="section-area-form">
+                <div id="area-titulo-form">
+                    <h1 id="titulo-formulario">Seja Voluntário Conosco</h1>
+                </div>
+                <form action="confirmaçãoV.html" method="post">
+                    <fieldset>
+                        <legend>Preenchas as Informações Abaixo</legend>
+
+                        <label for="nome">Nome Completo:*</label>
+                        <input type="text" id="nome" name="nome" required minlength="4" placeholder="Nome Completo">
+
+                        <label for="email">E-mail:*</label>
+                        <input type="email" id="email" name="email" required placeholder="E-mail@gmail.com">
+
+                        <label for="idade">Idade*</label>
+                        <input type="number" id="idade" name="idade" min="18" max="120" required minlength="2"
+                            placeholder="idade">
+
+                        <label for="telefone">Telefone*</label>
+                        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+                            minlength="11" placeholder="DDD-12345-1234" required>
+
+                        <label for="motivação">Por que você quer ser voluntário(a) na nossa ONG?*</label>
+                        <input type="text" id="motivacao" name="motivacao" minlength="40"
+                            placeholder="Qual a sua motivação?">
+
+
+                        Qual é a sua disponibilidade para o trabalho voluntário?
+                        <datalist id="disponibilidade">
+                            <option value="Semanalmente">
+                            <option value="Quinzenalmente">
+                            <option value="Mensalmente">
+                            <option value="Apenas Eventos Especificos">
+                        </datalist>
+
+                        <label for="disponibilidade">Sexo:</label>
+                        <input list="disponibilidade" id="disponibilidade" name="disponibilidade">
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

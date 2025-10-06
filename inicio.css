@@ -374,10 +374,11 @@ h3 {
 
 
 #section-footer {
-    height: 40vh;
+    height: 35vh;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: #05d3f8;
 }
 
 
