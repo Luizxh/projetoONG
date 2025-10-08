@@ -13,21 +13,30 @@ html {
 }
 
 :root {
-    --cor-principal-escuro: #0b3558;
-    --cor-secundaria-azul: #009ddd;
-    --cor-destaque-claro: #05d3f8;
-    --cor-texto-titulo: #3a3132;
-    --cor-nav-fundo: #0b54c2;
-    --cor-fundo-site: #ffffff;
-    --cor-hover: #306d96;
-    --cor-borda-suave: #e0e0e0;
-    --fonte-titulo: 'Poppins', sans-serif;
-    --fonte-corpo: 'Roboto', sans-serif;
+    --cor-principal: #FF8C61;
+    /* Laranja coral – alegria e energia (botões e títulos) */
+    --cor-secundaria: #FFD9C0;
+    /* Pêssego claro – menus e fundos suaves */
+    --cor-apoio: #FFE8D6;
+    /* Fundo claro e cartões */
+    --cor-verde: #A7C957;
+    /* Verde natural – detalhes e ícones */
+    --fundo-principal: #FFF9F5;
+    /* Fundo geral da página */
+    --fundo-cartao: #FFFFFF;
+    /* Fundo de cards e seções */
+    --texto-principal: #2E2E2E;
+    /* Texto escuro e legível */
+    --texto-secundario: #5C5C5C;
+    /* Subtítulos e descrições */
+    --cor-hover: #FF6B35;
+    /* Tom mais forte da principal para hover */
 }
 
 
+
 body {
-    background-color: #dfb9b9;
+    background-color: #cab4b4;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -46,7 +55,7 @@ body {
     display: grid;
     grid-template-columns: 0.5fr 1.3fr;
     gap: 3rem;
-    background-color: var(--cor-fundo-site);
+    background-color: var(--cor-secundaria);
     position: fixed;
     top: 0;
     width: 100%;
@@ -107,6 +116,7 @@ body {
 
 #acao {
     padding-top: 1.3rem;
+    color: var(--texto-principal);
 }
 
 #section-area-acao {
@@ -135,6 +145,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    color: var(--texto-secundario);
 }
 
 .titulo {
@@ -153,7 +164,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #05d3f8;
+    background-color: var(--fundo-cartao);
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
     border-top-left-radius: 3%;
@@ -198,6 +209,8 @@ h3 {
     text-align: center;
     padding: 0.4em;
     width: 100%;
+    color: var(--cor-principal);
+    font-weight: 600;
 }
 
 
@@ -235,7 +248,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0b54c2;
+    background-color: var(--fundo-principal);
     border-top-left-radius: 25%;
     border-top-right-radius: 25%;
 }
@@ -270,6 +283,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--cor-secundaria);
 }
 
 #area-inicio-doacao-info {
@@ -324,16 +338,22 @@ h3 {
 
 #botao-body {
     width: 40%;
-    border: 2px solid wheat;
+    border: 2px solid var(--fundo-principal);
     border-radius: 10px;
     display: flex;
     align-items: center;
     padding: 5px;
     justify-content: space-between;
+    background-color: var(--cor-principal);
+    border: none;
+    color: white;
+    transition: 0.3s ease;
 }
 
 #botao-body:hover {
-    border: 2px solid rgb(92, 247, 100);
+    border: 2px solid var(--cor-secundaria);
+    background-color: var(--cor-hover);
+    transform: scale(1.05);
 }
 
 
@@ -370,6 +390,16 @@ h3 {
 
 
 
+a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--cor-hover);
+}
+
 
 
 
@@ -378,7 +408,9 @@ h3 {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #05d3f8;
+    background-color: var(--cor-principal);
+    color: white;
+
 }
 
 
@@ -435,6 +467,9 @@ h3 {
     text-decoration: none;
     color: #ffffff;
 }
+.icons-footer:hover {
+  opacity: 0.8;
+}
 
 #background-icons1 {
     background: radial-gradient(circle at 80% 20%, #fdf497 0%, #fd5949 35%, #d6249f 70%, #285AEB 100%);
@@ -462,29 +497,32 @@ h3 {
 #area-contatos {
     width: 100%;
     display: flex;
-       margin-top: 20px;
+    margin-top: 20px;
 }
-#espaco-endereco{
+
+#espaco-endereco {
     width: 100%;
     flex-direction: row;
 }
-.informacoes{
+
+.informacoes {
     width: 100%;
     display: grid;
     grid-template-columns: 0.5fr 9fr;
-    
+
 }
 
-.texto-icon{
+.texto-icon {
     display: flex;
     align-items: center;
-    
+
 }
-.infos{
+
+.infos {
     margin-left: 10px;
 }
 
-.icons-area-footer{
+.icons-area-footer {
     width: 30px;
     height: 30px;
     margin: 10px 0;
