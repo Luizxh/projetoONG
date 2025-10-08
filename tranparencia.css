@@ -19,6 +19,7 @@
     --fonte-titulo: 'Poppins', sans-serif;
     --fonte-corpo: 'Roboto', sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
     margin: 0px;
@@ -81,21 +82,9 @@ body {
 }
 
 
-#sections-area-contato{
-    padding-top: 6.4rem;
+#relatorios{
+    padding-top: 6.5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
