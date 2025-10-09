@@ -13,17 +13,26 @@ html {
 }
 
 :root {
-    --cor-principal-escuro: #0b3558;
-    --cor-secundaria-azul: #009ddd;
-    --cor-destaque-claro: #05d3f8;
-    --cor-texto-titulo: #3a3132;
-    --cor-nav-fundo: #0b54c2;
-    --cor-fundo-site: #ffffff;
-    --cor-hover: #306d96;
-    --cor-borda-suave: #e0e0e0;
-    --fonte-titulo: 'Poppins', sans-serif;
-    --fonte-corpo: 'Roboto', sans-serif;
+    --cor-principal: #FF8C61;
+    /* Laranja coral – alegria e energia (botões e títulos) */
+    --cor-secundaria: #FFD9C0;
+    /* Pêssego claro – menus e fundos suaves */
+    --cor-apoio: #d8c0af;
+    /* Fundo claro e cartões */
+    --cor-verde: #A7C957;
+    /* Verde natural – detalhes e ícones */
+    --fundo-principal: #FFF9F5;
+    /* Fundo geral da página */
+    --fundo-cartao: #FFFFFF;
+    /* Fundo de cards e seções */
+    --texto-principal: #2E2E2E;
+    /* Texto escuro e legível */
+    --texto-secundario: #5C5C5C;
+    /* Subtítulos e descrições */
+    --cor-hover: #FF6B35;
+    /* Tom mais forte da principal para hover */
 }
+
 
 
 body {
@@ -83,10 +92,126 @@ body {
 
 
 
-#sections-area-projetos-inicio{
+#sections-area-projetos-inicio {
     padding-top: 6.4rem;
 }
 
+
+
+
+
+
+#section-area-texto-projetos,
+#section-area-texto-projetos2,
+#section-area-texto-projetos3,
+#section-area-texto-projetos4 {
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#definicao-area {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #05d3f8;
+}
+
+#area-tiitulo-projeto {
+    margin-top: 5%;
+}
+
+#elemento-traco {
+    background-color: var(--cor-verde);
+    width: 100px;
+    height: 2px;
+    margin-bottom: 10px;
+}
+
+#divisao-img-texto {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#texto-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+
+#area-img-regate {
+    height: 90%;
+    width: 80%;
+    border-radius: 5%;
+}
+
+
+
+
+#formurario-projeto-padrinho {
+    height: 100%;
+    width: 100%;
+
+}
+
+#alinhamento-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: 0;
+}
+
+#legenda {
+    text-align: start;
+    margin-left: 10px;
+}
+
+
+.label-espaco,
+.input-espaco {
+    margin-top: 5px;
+}
+
+#nome,
+#cpf,
+#email {
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+    padding-left: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+#quebra-linha {
+    display: flex;
+    justify-content: space-between;
+}
+
+#espacamento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.separados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 
 
@@ -101,6 +226,7 @@ body {
 
 #area-botao-doacao {
     text-align: start;
+    margin-top: 10px;
 }
 
 #area-botao-doacao {
@@ -110,7 +236,7 @@ body {
 #link-doacao {
     text-decoration: none;
     color: #550202;
-
+    display: flex;
 
 }
 
@@ -234,29 +360,32 @@ body {
 #area-contatos {
     width: 100%;
     display: flex;
-       margin-top: 20px;
+    margin-top: 20px;
 }
-#espaco-endereco{
+
+#espaco-endereco {
     width: 100%;
     flex-direction: row;
 }
-.informacoes{
+
+.informacoes {
     width: 100%;
     display: grid;
     grid-template-columns: 0.5fr 9fr;
-    
+
 }
 
-.texto-icon{
+.texto-icon {
     display: flex;
     align-items: center;
-    
+
 }
-.infos{
+
+.infos {
     margin-left: 10px;
 }
 
-.icons-area-footer{
+.icons-area-footer {
     width: 30px;
     height: 30px;
     margin: 10px 0;
