@@ -1,93 +1,52 @@
-* {
-    margin: 0;
-    /* Remove margens externas de todos os elementos */
-    padding: 0;
-    /* Remove preenchimentos internos de todos os elementos */
-    box-sizing: border-box;
-    /* Garante que padding e border não aumentem o tamanho do elemento */
-}
-
-html {
-    scroll-behavior: smooth;
-    margin: 0px;
-}
-
-:root {
-    --cor-principal: #FF8C61;
-    /* Laranja coral – alegria e energia (botões e títulos) */
-    --cor-secundaria: #FFD9C0;
-    /* Pêssego claro – menus e fundos suaves */
-    --cor-apoio: #d8c0af;
-    /* Fundo claro e cartões */
-    --cor-verde: #A7C957;
-    /* Verde natural – detalhes e ícones */
-    --fundo-principal: #FFF9F5;
-    /* Fundo geral da página */
-    --fundo-cartao: #FFFFFF;
-    /* Fundo de cards e seções */
-    --texto-principal: #2E2E2E;
-    /* Texto escuro e legível */
-    --texto-secundario: #5C5C5C;
-    /* Subtítulos e descrições */
-    --cor-hover: #FF6B35;
-    /* Tom mais forte da principal para hover */
-}
-
-
-
 body {
-    background-color: #dfb9b9;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
-#logo {
-    height: 10vh;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-
-#menu-area nav {
-    display: grid;
-    grid-template-columns: 0.5fr 1.3fr;
-    gap: 3rem;
-    background-color: var(--cor-fundo-site);
+/* ==========================
+   CABEÇALHO / MENU
+========================== */
+#menu-area {
+    background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 10vh;
-    z-index: 1000;
 }
 
-#menu-area ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+nav {
     display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
-#menu-area ul li .links {
-    margin: 0.5em;
-    padding: 0.4em;
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: var(--cor-principal-escuro)
+#img-logo {
+    width: 70px;
 }
 
-#menu-area .links:hover {
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: var(--cor-hover)
+nav ul {
+    list-style: none;
+    display: flex;
 }
 
-#menu-area picture img {
-    max-height: 10vh;
-    width: auto;
+nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #333;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #f6a623;
+}
+
+#money {
+    background-color: #f6a623;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
 }
 
 
@@ -112,107 +71,120 @@ body {
 
 }
 
+#sections-area-projetos-inicio {
+  padding-top: 80px; /* espaço por causa do menu fixo */
+}
+
 #definicao-area {
-    height: 100%;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #05d3f8;
+  background-color: #e6faff;
+  margin: 20px auto;
+  width: 90%;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
 }
 
-#area-tiitulo-projeto {
-    margin-top: 5%;
+.area-titulo-projeto h1 {
+  margin-top: 0;
 }
 
-#elemento-traco {
-    background-color: var(--cor-verde);
-    width: 100px;
-    height: 2px;
-    margin-bottom: 10px;
+.elemento-traco {
+  width: 100px;
+  height: 2px;
+  background-color: #00b3b3;
+  margin: 10px auto;
 }
 
-#divisao-img-texto {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/* ==========================
+   IMAGEM E TEXTO
+========================== */
+.divisao-img-texto {
+  margin-top: 20px;
 }
 
-#texto-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 90%;
+.texto-center {
+  margin: 10px auto;
+  width: 90%;
 }
 
-#area-img-regate {
-    height: 90%;
-    width: 80%;
-    border-radius: 5%;
+.area-img-regate img {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 
+/* ==========================
+   BOTÃO DE DOAÇÃO
+========================== */
+#area-botao-doacao {
+  margin-top: 15px;
+}
 
+#link-doacao {
+  text-decoration: none;
+  color: #550202;
+}
 
+#botao-body {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+  background-color: #fff3e0;
+}
 
-#formurario-projeto-padrinho {
-    height: 100%;
-    width: 100%;
+#botao-body:hover {
+  background-color: #f6a623;
+  color: #ffffff;
+}
 
+/* ==========================
+   FORMULÁRIO
+========================== */
+form {
+  margin-top: 15px;
 }
 
 #alinhamento-formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    border: 0;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 #legenda {
-    text-align: start;
-    margin-left: 10px;
+  font-weight: bold;
 }
 
+.label-espaco {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
 
-.label-espaco,
 .input-espaco {
-    margin-top: 5px;
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  margin-top: 5px;
+  padding-left: 5px;
 }
 
-#nome,
-#cpf,
-#email {
-    width: 70%;
-    height: 30px;
-    border-radius: 10px;
-    border: 0;
-    padding-left: 5px;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+.input-espaco::placeholder {
+  color: #888;
 }
 
-#quebra-linha {
-    display: flex;
-    justify-content: space-between;
-}
-
+/* quebra linha idade e telefone */
 #espacamento {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
 }
 
 .separados {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  margin-bottom: 10px;
 }
-
 
 
 
@@ -276,7 +248,6 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #05d3f8;
 }
 
 
@@ -366,6 +337,9 @@ body {
 #espaco-endereco {
     width: 100%;
     flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .informacoes {
