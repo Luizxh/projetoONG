@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="img/logo.png">
-  <title>Patas Felizes</title>
+  <title>Projetos</title>
   <link rel="stylesheet" href="./css/projetos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 <body>
   <header id="menu-area">
     <nav>
-      <a href="#sections-area-projetos-inicio" id="logo">
+      <a href="index.html" id="logo">
         <picture>
           <source srcset="../img/logo.webp" type="image/webp">
           <img src="../img/logo.png" alt="Logo da ONG Amigo Fiel" loading="lazy" id="img-logo">
@@ -31,10 +31,11 @@
     </nav>
   </header>
 
+ 
   <main>
     <section id="sections-area-projetos-inicio">
       <h1 class="invisivel">area inicial</h1>
-      <article >
+      <article>
         <h2 class="invisivel">imagem de inicio</h2>
       </article>
     </section>
@@ -47,16 +48,18 @@
         <div class="elemento-traco"></div>
 
         <div class="divisao-img-texto">
-          <div class="texto-center">
-            <p>Bem-vindo ao coração da nossa missão! Aqui é onde o amor se transforma em ação concreta...</p>
-          </div>
-
           <div class="area-img-regate">
             <picture>
               <source srcset="../img/salvamento.webp" type="image/webp">
               <img src="../img/salvamento.png" alt="Cão e gato sendo resgatados">
             </picture>
           </div>
+          <div class="texto-center">
+            <p>Quando resgatamos um cão ou gato da rua, eles precisam de mais do que apenas comida e cuidados médicos.
+              Eles precisam de um ambiente calmo para se recuperar, aprender a confiar novamente nos humanos e se
+              acostumar com a rotina de uma casa.</p>
+          </div>
+
         </div>
       </div>
     </section>
@@ -67,17 +70,17 @@
           <h1>Voluntariado 360º</h1>
         </div>
         <div class="elemento-traco"></div>
-
         <div class="divisao-img-texto">
           <div class="texto-center">
-            <p>Nosso programa Voluntariado 360º é a espinha dorsal da ONG...</p>
-
+            <p>Nosso programa Voluntariado 360º é a espinha dorsal da ONG, pois integra todas as nossas áreas de atuação
+              e garante que o apoio chegue de forma completa e sustentável às comunidades que atendemos, mobilizando
+              pessoas em diversas frentes: desde a operacional até a estratégica.</p>
             <div id="area-botao-doacao">
-              <a href="doacoes.html" id="link-doacao">
-                <div id="botao-body">
-                  <p id="texto-botao">Seja um Voluntário!</p>
+              <a href="cadastro.html" class="link-doacao">
+                <div class="botao-body">
+                  <p class="texto-botao">Seja um voluntário</p>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    id="bi-arrow-right-short" viewBox="0 0 16 16">
+                    class="bi-arrow-right-short" viewBox="0 0 16 16" role="img" aria-label="Seta para a direita">
                     <path fill-rule="evenodd"
                       d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
                   </svg>
@@ -102,41 +105,73 @@
         </div>
         <div class="elemento-traco"></div>
 
+        <div class="texto-center">
+          <p>
+            O programa Padrinhos e Madrinhas de Patas oferece a você a oportunidade de transformar a vida de um animal
+            resgatado, garantindo-lhe amparo financeiro e afetivo enquanto ele espera pela adoção definitiva.</p>
+        </div>
         <div class="divisao-img-texto">
-          <div class="texto-center">
-            <p>O programa Padrinhos e Madrinhas de Patas oferece a você a oportunidade...</p>
+          <div class="area-img-regate">
+            <picture class="area-img-regate">
+                 <source srcset="../img/padrinhos.webp" type="image/webp">
+                 <source srcset="../img/padrinhos.jpeg" type="image/jpeg">
+                <img src="../img/voluntario.png" alt="Pessoa voluntária cuidando de um cão">
+              </picture>
           </div>
+        <div class="area-botao-doacao">
+          <a href="cadastro.html" class="link-doacao">
+            <div class="botao-body">
+              <p class="texto-botao">Cadastre-se e vire um padrinho!</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi-arrow-right-short" viewBox="0 0 16 16" role="img" aria-label="Seta para a direita">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
 
-          <form action="#" method="post" id="formulario-projeto-padrinho">
-            <fieldset id="alinhamento-formulario">
-              <legend id="legenda">Cadastre-se como padrinho</legend>
+      </div>
+    </section>
 
-              <label for="nome" class="label-espaco">Nome Completo*</label>
-              <input type="text" id="nome" name="nome" required minlength="4" placeholder="Nome Completo"
-                class="input-espaco">
-
-              <label for="cpf" class="label-espaco">CPF*</label>
-              <input type="text" id="cpf" name="cpf" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
-                placeholder="000.000.000-00" title="Formato: 000.000.000-00" class="input-espaco" required>
-
-              <label for="email" class="label-espaco">E-mail*</label>
-              <input type="email" id="email" name="email" required placeholder="email@gmail.com" class="input-espaco">
-
-              <div id="espacamento">
-                <div class="separados">
-                  <label for="idade" class="label-espaco">Idade*</label>
-                  <input type="number" id="idade" name="idade" min="18" max="120" required placeholder="Idade"
-                    class="input-espaco">
-                </div>
-
-                <div class="separados">
-                  <label for="telefone" class="label-espaco">Telefone*</label>
-                  <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" placeholder="DDD 99999-9999"
-                    required class="input-espaco">
-                </div>
+    <section id="section-inicio-doacao">
+      <h2 class="invisivel">doações</h2>
+      <div class="area-inicio-doacao-info">
+        <div class="area-conteudo-doacao">
+          <div class="area-titulo-doacao">
+            <h2 class="texto-titulo">
+              AJUDE-NÓS COM UMA DOAÇÃO
+            </h2>
+          </div>
+          <div class="area-subt-doação">
+            <p class="texto-subt-doacao">
+              Quando você doa, você não está apenas dando dinheiro, você está oferecendo uma segunda
+              chance real para cães em situação de rua.
+            </p>
+          </div>
+          <div class="area-botao-doacao">
+            <a href="https://www.paypal.com/br/home" class="link-doacao">
+              <div class="botao-body">
+                <p class="texto-botao">Clique e Doe!</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi-arrow-right-short" viewBox="0 0 16 16" role="img" aria-label="Seta para a direita">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                </svg>
               </div>
-            </fieldset>
-          </form>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="area-inicio-doacao-img">
+        <div class="img-inicio-doacao">
+          <picture>
+            <source srcset="../img/img-doacao1.webp" type="image/webp">
+            <source srcset="../img/img-doacao1.jpeg" type="image/jpeg">
+            <img src="../img/img-doacao1.png" alt="Cachorros em ONG" class="img-inicio-doacao" id="img-cao"
+              loading="lazy">
+          </picture>
         </div>
       </div>
     </section>
