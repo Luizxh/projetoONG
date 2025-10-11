@@ -1,0 +1,484 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==========================
+   CABEÇALHO / MENU
+========================== */
+#menu-area {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#img-logo {
+    width: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #333;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #f6a623;
+}
+
+#money {
+    background-color: #f6a623;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+}
+
+
+
+#sections-area-projetos-inicio {
+    padding-top: 6.4rem;
+}
+
+
+
+.invisivel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+
+#section-area-texto-projetos,
+#section-area-texto-projetos4 {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#section-area-texto-projetos2 {
+    background-color: #fff3d4;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+}
+
+#section-area-texto-projetos3 {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+}
+
+#sections-area-projetos-inicio {
+    padding-top: 80px;
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/barraInicio.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+}
+
+.definicao-area {
+    width: 70%;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.area-titulo-projeto h1 {
+    margin-top: 0;
+    color: #f6a623;
+}
+
+.elemento-traco {
+    width: 100px;
+    height: 2px;
+    background-color: #00b3b3;
+    margin: 10px auto;
+}
+
+/* ==========================
+   IMAGEM E TEXTO
+========================== */
+.divisao-img-texto {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.texto-center {
+    margin: 10px auto;
+    width: 90%;
+}
+
+.area-img-regate img {
+    width: 70%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* ==========================
+   BOTÃO DE DOAÇÃO
+========================== */
+.area-botao-doacao {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bi-arrow-right-short {
+    width: 30px;
+    height: 30px;
+}
+
+.link-doacao {
+    text-decoration: none;
+}
+
+.botao-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    background-color: #f6a623;
+    color: white;
+    padding: 7px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-body:hover {
+    background-color: #f19419;
+}
+
+.area-inicio-doacao-img img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* ==========================
+   SECTION DOAÇÃO
+========================== */
+
+
+#section-inicio-doacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff3d4;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+}
+
+.area-inicio-doacao-info {
+    width: 30%;
+    padding: 20px;
+}
+
+.texto-titulo {
+    color: #f6a623;
+    margin-bottom: 10px;
+}
+
+.texto-subt-doacao {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.bi-arrow-right-short {
+    width: 30px;
+    height: 30px;
+}
+
+.link-doacao {
+    text-decoration: none;
+}
+
+.botao-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    background-color: #f6a623;
+    color: white;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.botao-body:hover {
+    background-color: #f19419;
+}
+
+.area-inicio-doacao-img img {
+    width: 300px;
+    border-radius: 10px;
+
+}
+
+/* ==========================
+   FORMULÁRIO
+========================== */
+form {
+    margin-top: 15px;
+}
+
+#alinhamento-formulario {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#legenda {
+    font-weight: bold;
+}
+
+.label-espaco {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.input-espaco {
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+
+#espacamento {
+    margin-top: 10px;
+}
+
+.separados {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#area-botao-doacao {
+    text-align: start;
+    margin-top: 10px;
+}
+
+#area-botao-doacao {
+    width: 90%;
+}
+
+#link-doacao {
+    text-decoration: none;
+    color: #550202;
+    display: flex;
+
+}
+
+#link-doacao:hover {
+    color: rgb(58, 100, 60)
+}
+
+#botao-body {
+    width: 40%;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+#botao-body:hover {
+    border: 2px solid rgb(92, 247, 100);
+}
+
+
+#bi-arrow-right-short {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.1em;
+    color: #e0e0e0;
+}
+
+#bi-arrow-right-short:hover {
+    color: rgb(78, 119, 80);
+}
+
+
+#section-footer {
+    height: 40vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+#separador {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+#area-logo-infos {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#img-footer-area {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+#logo-footer {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+}
+
+#texto-area-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#espaco-texto-footer,
+#espaco-icon-footer {
+    width: 55%;
+}
+
+
+#icons-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#icons {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.redes-socias-footer,
+.icons-footer {
+    padding: 0;
+    margin: 6px;
+    width: 40px;
+    height: 30px;
+
+}
+
+.icons-footer {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#background-icons1 {
+    background: radial-gradient(circle at 80% 20%, #fdf497 0%, #fd5949 35%, #d6249f 70%, #285AEB 100%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#background-icons2 {
+    background-color: #4767f5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#background-icons3 {
+    background-color: #ff0000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#area-contatos {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+#espaco-endereco {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informacoes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 9fr;
+
+}
+
+.texto-icon {
+    display: flex;
+    align-items: center;
+
+}
+
+.infos {
+    margin-left: 10px;
+}
+
+.icons-area-footer {
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+}
+
