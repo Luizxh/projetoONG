@@ -535,7 +535,7 @@ form {
         justify-content: center;
     }
 
-    .area-img-regate{
+    .area-img-regate {
         height: 20vh;
     }
 
@@ -749,7 +749,7 @@ form {
     #section-area-texto-projetos .area-img-regate {
         height: 15vh;
     }
-  
+
 
     .definicao-area {
         margin-top: 0;
@@ -757,11 +757,13 @@ form {
         display: flex;
         flex-direction: column;
     }
-    .divisao-img-texto{
+
+    .divisao-img-texto {
         display: flex;
         flex-direction: column;
         height: 30vh;
     }
+
     .texto-center {
         height: 20vh;
     }
@@ -942,12 +944,11 @@ form {
 
     nav {
         display: grid;
-        grid-template-columns: 0.1fr 0.6fr;
-        width: 100vw;
+        grid-template-columns: 1fr 1fr;
     }
 
     #img-logo {
-        width: 4em;
+        width: 5em;
     }
 
     nav ul {
@@ -957,15 +958,13 @@ form {
 
     nav a {
         text-decoration: none;
-        font-size: 1.5em;
+        font-size: 1.2rem;
         color: #333;
-        margin: 10px;
     }
 
     h1 {
         font-size: 2rem;
     }
-
 
     #sections-area-projetos-inicio {
         padding-top: 80px;
@@ -980,7 +979,7 @@ form {
     }
 
     #section-area-texto-projetos {
-        height: 50vh;
+        height: 45vh;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -988,8 +987,9 @@ form {
     }
 
     #section-area-texto-projetos .area-img-regate {
-        height: 3vh;
+        height: 30vh;
     }
+
 
     .definicao-area {
         margin-top: 0;
@@ -997,56 +997,47 @@ form {
         display: flex;
         flex-direction: column;
     }
-    .divisao-img-texto{
+
+    .divisao-img-texto {
         display: flex;
         flex-direction: column;
         height: 30vh;
     }
 
     .texto-center {
-        height: 3vh;
+        height: 20vh;
     }
 
     .texto-center p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 0;
     }
 
     #section-area-texto-projetos2 {
-        height: 70vh;
-        width: 100vw;
+        background-color: #fff3d4;
+        height: 60vh;
+        width: 100%;
         display: flex;
         justify-content: center;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
 
+
+    #section-area-texto-projetos2 .botao-body {
+        width: 100%;
     }
 
     #section-area-texto-projetos2 .area-img-regate {
-        height: 3vh;
+        height: 5vh;
     }
-
-    .texto-center {
-        height: 3vh;
-    }
-
-    .texto-center p {
-        font-size: 1.2rem;
+    #section-area-texto-projetos2 .area-img-regate  img{
+        height: 25vh;
         margin: 0;
     }
 
-    .area-botao-doacao .botao-body {
-        width: 100vw;
+    #section-area-texto-projetos2 .divisao-img-texto {
+        height: 35vh;
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1067,6 +1058,7 @@ form {
 
     .area-botao-doacao {
         margin: 0;
+        height: 10vh;
 
     }
 
@@ -1077,10 +1069,8 @@ form {
     }
 
     #section-area-texto-projetos3 .area-img-regate {
-        height: 15vh;
+        height: 20vh;
         width: 25vw;
-        display: flex;
-        align-items: end;
     }
 
 
@@ -1093,7 +1083,7 @@ form {
     .elemento-traco {
         width: 100px;
         height: 2px;
-        background-color: #bd7407;
+        background-color: #00b3b3;
         margin: 10px auto;
     }
 
@@ -1139,19 +1129,6 @@ form {
         margin: 0 10px;
     }
 
-    #logo-footer {
-        height: 10vh;
-        width: 25vw;
-        border-radius: 1em;
-        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
-    }
-
-    #texto-area-footer {
-        width: 90vw;
-        display: flex;
-        justify-content: start;
-        margin: 0 10px;
-    }
 
 
 
@@ -1162,15 +1139,14 @@ form {
         margin: 0 10px;
     }
 
+
+
+
+
     #espaco-texto-footer {
         width: 90vw;
     }
 
-    #espaco-endereco {
-        width: 90vw;
-        margin: 1rem;
-        padding: 0;
-    }
 
     .texto-icon {
         display: flex;

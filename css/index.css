@@ -1236,8 +1236,37 @@ nav a:hover {
 }
 
 
-@media (min-width: 769px) and (max-width: 1144px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 
+    #menu-area {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 0.1fr 0.6fr;
+        width: 100vw;
+    }
+
+    #img-logo {
+        width: 5em;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #333;
+        margin: 10px;
+    }
 
     /* ==========================
    MÉTRICAS / IMPACTO
@@ -1273,7 +1302,7 @@ nav a:hover {
 
     #section-area-missao {
         text-align: center;
-        height: 50vh;
+        height: 40vh;
         box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
     }
 
@@ -1283,7 +1312,7 @@ nav a:hover {
         background-color: white;
         border-radius: 2em;
         padding: 1em;
-        height: 39vh;
+        height: 33vh;
         width: 25vw;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         text-align: center;
@@ -1294,47 +1323,137 @@ nav a:hover {
    RODAPÉ
 ========================== */
     #section-footer {
-        height: 65vh;
-        width: 100vw;
+        height: 50vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         background-color: #fff3d4;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
+    #separador {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
     #area-logo-infos {
-        width: 100vw;
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
     }
 
     #img-footer-area {
-        width: 50vw;
+        width: 65%;
         display: flex;
-        justify-content: start;
-        margin: 0 10px;
+        justify-content: end;
     }
 
     #logo-footer {
-        height: 15vh;
-        width: 20vw;
-        border-radius: 1em;
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
         box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
     }
 
     #texto-area-footer {
-        width: 97vw;
+        width: 100%;
         display: flex;
-        justify-content: start;
-        margin-left: 10px;
+        justify-content: center;
+    }
+
+    #espaco-texto-footer,
+    #espaco-icon-footer {
+        width: 55%;
     }
 
 
     #icons-area {
-        width: 90vw;
+        width: 100%;
         display: flex;
-        justify-content: start;
-        margin: 0 10px;
+        justify-content: center;
+    }
+
+    #icons {
+        display: flex;
+        padding-bottom: 20px;
+    }
+
+    .redes-socias-footer,
+    .icons-footer {
+        padding: 0;
+        margin: 6px;
+        width: 40px;
+        height: 30px;
+
+    }
+
+    .icons-footer {
+        text-decoration: none;
+        color: #ffffff;
     }
 
 
+
+
+
+    #area-contatos {
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+    }
+
+    #espaco-endereco {
+        width: 100%;
+        padding: 0;
+        flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .icons-area-footer {
+        width: 5vw;
+        margin: 10px 0;
+    }
+
+}
+
+@media(min-width: 1025px) {
+      #menu-area {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 0.1fr 0.6fr;
+        width: 100vw;
+    }
+
+    #img-logo {
+        width: 5em;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 1em;
+        color: #333;
+        margin: 10px;
+    }
+    #section-footer {
+        height: 50vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #fff3d4;
+    }
 }
