@@ -213,6 +213,7 @@ form {
 #texto-padrinho-espaco {
     width: 60%;
 }
+
 #texto-padrinho2 {
     width: 100%;
     display: flex;
@@ -260,25 +261,6 @@ picture {
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -415,4 +397,557 @@ picture {
     width: 30px;
     height: 30px;
     margin: 10px 0;
+}
+
+
+@media (max-width: 375px) {
+    #menu-area {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+    }
+
+    #img-logo {
+        width: 5em;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: #333;
+    }
+
+    #area-titulo-projeto {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1rem;
+        color: #f6a623;
+
+    }
+
+    #tamanho-imagem-espaco {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .texto-introducao {
+        font-size: 0.9rem;
+    }
+
+    #tamanho-img-cadastro1,
+    .img-cachorro {
+        display: none;
+    }
+
+    .divisao-img-texto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+
+    form {
+        width: 100%;
+    }
+
+    .alinhamento-formulario {
+        width: 100%;
+    }
+
+    .ladoalado {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .label-espaco {
+        margin-top: 10px;
+
+    }
+
+    #emailcad,
+    #enderecocad,
+    #nascimentocad,
+    #cepcad,
+    #estadocad,
+    #cidadecad,
+    #nome,
+    #email,
+    #cpf,
+    #telefone,
+    #idade {
+        width: 23em;
+    }
+
+    #botao-enviar,
+    #botao-enviar-segundo {
+        margin-top: 1rem;
+        padding: 5px;
+        width: 23%;
+        font-size: 1.2em;
+        font-family: "Montserrat", sans-serif;
+        background-color: #fdf497;
+        border: 2px solid #fcb902;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+
+
+    #texto-padrinho-espaco,
+    #texto-padrinho-espaco2 {
+        width: 100%;
+    }
+
+    .texto-padrinho {
+        font-size: 0.9rem;
+    }
+
+
+    .alinhamento-formulario2 {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    #section-footer {
+        height: 85vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #img-footer-area {
+        width: 90vw;
+        display: flex;
+        justify-content: start;
+        margin: 0 10px;
+    }
+
+    #logo-footer {
+        height: 13vh;
+        width: 25vw;
+        border-radius: 1em;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+
+    #texto-area-footer #espaco-texto-footer {
+        width: 90%;
+    }
+
+
+    #icons-area {
+        width: 90%;
+        display: flex;
+        justify-content: start;
+        margin: 0 10px;
+    }
+
+
+
+
+    #espaco-endereco {
+        width: 90vw;
+        margin: 1rem;
+        padding: 0;
+    }
+
+
+    .texto-icon {
+        display: flex;
+        align-items: center;
+        width: 95vw;
+    }
+
+    .icons-area-footer {
+        display: none;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 600px) {
+    #menu-area {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 0.6fr 1fr;
+    }
+
+    #img-logo {
+        width: 5em;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: #333;
+    }
+
+    #area-titulo-projeto {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1rem;
+        color: #f6a623;
+
+    }
+
+    #tamanho-imagem-espaco {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+
+    .texto-introducao {
+        font-size: 0.9rem;
+    }
+
+    #tamanho-img-cadastro1,
+    .img-cachorro {
+        display: none;
+    }
+
+    .divisao-img-texto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+
+    form {
+        width: 100%;
+    }
+
+    .alinhamento-formulario {
+        width: 100%;
+    }
+
+    .ladoalado {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .label-espaco {
+        margin-top: 10px;
+
+    }
+
+    #emailcad,
+    #nomecad,
+    #cpfcad,
+    #telefonecad,
+    #enderecocad,
+    #nascimentocad,
+    #cepcad,
+    #estadocad,
+    #cidadecad,
+    #nome,
+    #email,
+    #cpf,
+    #telefone,
+    #idade {
+        width: 26em;
+    }
+
+    #botao-enviar,
+    #botao-enviar-segundo {
+        margin-top: 1rem;
+        padding: 5px;
+        width: 23%;
+        font-size: 1.2em;
+        font-family: "Montserrat", sans-serif;
+        background-color: #fdf497;
+        border: 2px solid #fcb902;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+
+
+    #texto-padrinho-espaco,
+    #texto-padrinho-espaco2 {
+        width: 100%;
+    }
+
+    .texto-padrinho {
+        font-size: 0.9rem;
+    }
+
+
+    .alinhamento-formulario2 {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    #section-footer {
+        height: 70vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #img-footer-area {
+        width: 90vw;
+        display: flex;
+        justify-content: start;
+        margin: 0 10px;
+    }
+
+    #logo-footer {
+        height: 13vh;
+        width: 25vw;
+        border-radius: 1em;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+
+    #texto-area-footer #espaco-texto-footer {
+        width: 90%;
+    }
+
+
+    #icons-area {
+        width: 90%;
+        display: flex;
+        justify-content: start;
+        margin: 0 10px;
+    }
+
+
+
+
+    #espaco-endereco {
+        width: 90vw;
+        margin: 1rem;
+        padding: 0;
+    }
+
+
+    .texto-icon {
+        display: flex;
+        align-items: center;
+        width: 95vw;
+    }
+
+    .icons-area-footer {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    #menu-area {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #img-logo {
+        width: 5em;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: #333;
+    }
+
+    #area-titulo-projeto {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1rem;
+        color: #f6a623;
+
+    }
+
+    #tamanho-imagem-espaco {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-introducao {
+        font-size: 0.9rem;
+    }
+
+    #tamanho-img-cadastro1 img,
+    source {
+        width: 300px;
+        display: flex;
+        align-items: center;
+    }
+
+    .divisao-img-texto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+
+    form {
+        width: 100%;
+    }
+
+    .alinhamento-formulario {
+        width: 100%;
+    }
+
+    .ladoalado {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .label-espaco {
+        margin-top: 10px;
+
+    }
+
+    #emailcad,
+    #nomecad,
+    #cpfcad,
+    #telefonecad,
+    #enderecocad,
+    #nascimentocad,
+    #cepcad,
+    #estadocad,
+    #cidadecad,
+    #nome,
+    #email,
+    #cpf,
+    #telefone,
+    #idade {
+        width: 26em;
+    }
+
+    #botao-enviar,
+    #botao-enviar-segundo {
+        margin-top: 1rem;
+        padding: 5px;
+        width: 23%;
+        font-size: 1.2em;
+        font-family: "Montserrat", sans-serif;
+        background-color: #fdf497;
+        border: 2px solid #fcb902;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+
+
+    #texto-padrinho-espaco,
+    #texto-padrinho-espaco2 {
+        width: 100%;
+    }
+
+    .texto-padrinho {
+        font-size: 0.9rem;
+    }
+
+
+    .alinhamento-formulario2 {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    #section-footer {
+        height: 70vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #img-footer-area {
+        width: 90vw;
+        display: flex;
+        justify-content: start;
+        margin: 0 10px;
+    }
+
+    #logo-footer {
+        height: 13vh;
+        width: 25vw;
+        border-radius: 1em;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+
+    #texto-area-footer #espaco-texto-footer {
+        width: 90%;
+    }
+
+
+    #icons-area {
+        width: 90%;
+        display: flex;
+        justify-content: start;
+        margin: 0 10px;
+    }
+
+
+
+
+    #espaco-endereco {
+        width: 90vw;
+        margin: 1rem;
+        padding: 0;
+    }
+
+
+    .texto-icon {
+        display: flex;
+        align-items: center;
+        width: 95vw;
+    }
+
+    .icons-area-footer {
+        display: none;
+    }
 }
