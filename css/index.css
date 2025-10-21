@@ -16,6 +16,28 @@ html {
 /* ==========================
    CABEÇALHO / MENU
 ========================== */
+#menu-lista {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-lista li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+
+.hamburguer {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
 
 #menu-toggle {
     display: none;
@@ -27,6 +49,7 @@ html {
     font-size: 2em;
     cursor: pointer;
 }
+
 #menu-area {
     background-color: white;
     position: fixed;
@@ -368,7 +391,30 @@ nav a:hover {
    RESPONSIVIDADE
 ========================== */
 @media (max-width: 375px) {
+    .hamburguer {
+        display: block;
+    }
 
+    #menu-lista {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgb(255, 196, 0);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+
+    #menu-lista.mostrar {
+        display: flex;
+    }
+
+    #menu-lista li {
+        text-align: center;
+        padding: 10px 0;
+    }
 
     #menu-area {
         background-color: white;
@@ -379,8 +425,8 @@ nav a:hover {
     }
 
     nav {
-        display: grid;
-        grid-template-columns: 0.1fr 1fr;
+        display: flex;
+        justify-content: space-around;
     }
 
     #img-logo {
@@ -1454,6 +1500,7 @@ nav a:hover {
         color: #333;
         margin: 10px;
     }
+
     .area-bloco {
         background-color: white;
         border-radius: 2em;

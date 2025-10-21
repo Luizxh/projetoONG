@@ -17,22 +17,19 @@
 <body>
     <header id="menu-area">
         <nav>
-            <a href="#section-inicio-area" id="logo">
-                <picture>
-                    <source srcset="../img/logo.webp" type="image/webp">
-                    <source srcset="../img/logo.jpeg" type="image/jpeg">
-                    <img src="../img/logo.png" alt="Logo da ONG Patinhas Felizes" loading="lazy" id="img-logo">
-                </picture>
+            <a href="index.html" id="logo">
+                <img src="../img/logo.png" alt="Logo da ONG Amigo Fiel" loading="lazy" id="img-logo">
             </a>
 
-            <!-- Checkbox para menu hamburger
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" id="menu-icon">☰</label>
- -->
-            <ul>
+            <!-- Botão hamburguer -->
+            <button id="btn-menu" class="hamburguer" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <ul id="menu-lista">
                 <li><a href="#section-inicio-area" class="links">Início</a></li>
-                <li><a href="projetos.html" class="links">Projetos</a></li>
-                <li><a href="cadastro.html" class="links">Cadastro</a></li>
+                <li><a href="/projetos.html" class="links">Projetos</a></li>
+                <li><a href="/cadastro.html" class="links">Cadastro</a></li>
             </ul>
         </nav>
     </header>
@@ -275,6 +272,7 @@
             </ul>
         </div>
     </footer>
+    <script src="/script.js/menuburguer.js"></script>
 </body>
 
 </html>
