@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .invisivel {
     position: absolute;
     width: 1px;
@@ -73,6 +77,10 @@ nav a:hover {
     padding-top: 5.6rem;
     background-color: #fff3d4;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #e4da6b;
 }
 
 #section-area-texto-projetos form {
@@ -891,12 +899,16 @@ picture {
     #estadocad,
     #telefonecad,
     #nomecad,
-    #cpfcad,
-    #idade,
-    #telefone {
+    #cpfcad {
         width: 100%;
         padding: 10px;
         max-width: 55em;
+    }
+
+    #idade,
+    #telefone {
+        width: 100%;
+        max-width: 16.8em;
     }
 
     #section-footer {
