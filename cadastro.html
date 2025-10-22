@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../img/logo.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <title>Cadastro</title>
     <link rel="stylesheet" href="../css/cadastro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,10 +58,10 @@
                         <picture id="tamanho-img-cadastro1">
                             <source srcset="img/cadastro1.webp" type="image/webp">
                             <source srcset="img/cadastro1.jpeg" type="image/jpag">
-                            <img src="img/cadastro1.png" alt="cachorrinho" id="img-cachorro">
+                            <img src="img/cadastro1.png" alt="cachorrinho" id="img-cachorro1">
                         </picture>
                     </div>
-                    <form action="" method="post" id="form-cadastro" novalidate>
+                    <form action="#" method="post" id="form-cadastro" novalidate>
                         <fieldset class="alinhamento-formulario">
                             <legend>Se cadastre</legend>
                             <div class="ladoalado">
@@ -84,7 +86,7 @@
 
                                 <label for="telefonecad" class="label-espaco">Telefone:*</label>
                                 <input type="tel" id="telefonecad" name="telefone" pattern="[0-9]{11,13}" minlength="11"
-                                    placeholder="telefone" required class="input-espaco">
+                                    placeholder="Telefone" required class="input-espaco">
                             </div>
 
 
@@ -109,7 +111,9 @@
                                     class="input-espaco">
                             </div>
 
-                            <p id="mensagem"></p>
+                            <div id="container">
+                                <p id="mensagem"></p>
+                            </div>
                             <button type="submit" id="botao-enviar">Enviar</button>
                         </fieldset>
                     </form>
@@ -129,7 +133,8 @@
         </div>
 
         <div class="divisao-img-texto">
-            <form action="#" method="post" id="formulario-projeto-padrinho" novalidate>
+            <form action="https://formsubmit.co/henriquediaslima09@gmail.com" method="post"
+                id="formulario-projeto-padrinho" novalidate>
                 <fieldset class="alinhamento-formulario2">
                     <legend id="legenda">Cadastre-se como padrinho(a)</legend>
 
@@ -155,10 +160,12 @@
                         <div class="separados">
                             <label for="telefone" class="label-espaco">Telefone*</label>
                             <input type="tel" id="telefone" name="telefone" pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}"
-                                required class="input-espaco">
+                                required class="input-espaco" placeholder="(00) 00000-0000">
                         </div>
                     </div>
-                    <p id="mensagem2"></p>
+                    <div id="container2">
+                        <p id="mensagem2"></p>
+                    </div>
                     <button type="submit" id="botao-enviar-segundo">Enviar</button>
                 </fieldset>
             </form>
@@ -281,9 +288,11 @@
             </ul>
         </div>
     </footer>
-    <script src="/script.js/menuburguer.js"></script>
-    <script src="/script.js/formulariocadastro.js"></script>
-    <script src="/script.js/formulariopadrinho.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="./script.js/menuburguer.js"></script>
+    <script src="./script.js/formulariocadastro.js"></script>
+    <script src="./script.js/formulariopadrinho.js"></script>
 </body>
 
 </html>

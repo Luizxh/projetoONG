@@ -1,5 +1,4 @@
 
-
   const botaoMenu = document.getElementById("btn-menu");
   const menuLista = document.getElementById("menu-lista");
 

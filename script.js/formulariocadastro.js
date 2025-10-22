@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   const campos = {
     nome: {
@@ -6,34 +5,28 @@ document.addEventListener('DOMContentLoaded', () => {
       validar: valor => valor.value.trim().length < 3,
       mensagem: "Nome deve ter pelo menos 3 caracteres!"
     },
-
     cpf: {
       value: document.getElementById('cpfcad'),
       validar: valor => valor.value.trim() === "" || !/^\d{3}\.\d{3}\.\d{3}-\d{2}$/.test(valor.value),
       mensagem: "Por favor, digite um CPF válido. 000.000.000-00"
     },
-
     email: {
       value: document.getElementById('emailcad'),
       validar: valor => valor.value.trim() === "" || !valor.value.includes('@'),
       mensagem: "Digite um email válido!"
     },
-
     telefone: {
       value: document.getElementById('telefonecad'),
       validar: valor => valor.value.trim() === "" || valor.value.replace(/\D/g, '').length !== 11,
       mensagem: "Digite um número válido"
     },
-
     endereco: {
       value: document.getElementById('enderecocad'),
-
       validar: valor => valor.value.trim().length < 7,
-      mensagem: "É necessario informar o endereço!"
+      mensagem: "É necessário informar o endereço!"
     },
     cep: {
       value: document.getElementById('cepcad'),
-
       validar: valor => valor.value.trim() === "" || !/^\d{5}-\d{3}$/.test(valor.value),
       mensagem: "É necessário informar o CEP! Formato: 00000-000"
     },
@@ -42,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
       validar: valor => valor.value.trim().length < 4,
       mensagem: "Informe o nome da sua cidade"
     },
-
     estado: {
       value: document.getElementById('estadocad'),
       validar: valor => valor.value.trim().length < 2,
@@ -50,27 +42,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-
   const form = document.getElementById('form-cadastro');
   const mensagemError = document.getElementById('mensagem');
+  const container = document.getElementById('container'); 
+
   if (form) {
     form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      mensagemError.innerHTML = "";
+      event.preventDefault(); // evita recarregar a página
+  
 
+      // validação
       for (let i in campos) {
         const campo = campos[i];
 
-        // Como estamos no DOMContentLoaded, campo.value não deve ser null. 
-        // Se for, é um erro grave de ID no HTML.
         if (!campo.value) {
-          console.error(`Erro crítico o elemento ${i} não se faz presento no HTML/null`);
-          mensagemError.innerHTML = "Desculpa, acabei tendo um erro interno!!"
+          console.error(`Erro crítico: elemento ${i} não encontrado no HTML`);
+          mensagemError.innerHTML = "Erro interno! Contate o administrador.";
           mensagemError.style.color = "red";
           return;
         }
 
-        // Chama a função de validação
         if (campo.validar(campo.value)) {
           mensagemError.innerHTML = campo.mensagem;
           mensagemError.style.color = "red";
@@ -79,15 +70,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
+      container.innerHTML = `
+        <div style="text-align: center; padding: 2rem;">
+          <h2 style="color: green;">Formulário enviado com sucesso!</h2>
+          <p>Obrigado por se cadastrar. Você agora faz parte da nossa comunidade!</p>
+           <button id="voltar" style="padding: 10px 20px; margin-top: 1rem; border-radius: 20px; background-color: #fff3d4;" border:0;>Voltar ao formulário</button>
+        </div>
+      `;
 
-      mensagemError.innerHTML = "Formulário válido! Enviado com sucesso!";
-      mensagemError.style.color = "green";
-
-
-      form.reset();
-
-
-      form.submit();
+      // botão de voltar ao formulário
+      document.getElementById('voltar').addEventListener('click', () => {
+        container.innerHTML = '';
+        form.reset();
+      });
 
     });
   }

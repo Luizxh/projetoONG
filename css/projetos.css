@@ -525,11 +525,15 @@ form {
 
     #menu-lista.mostrar {
         display: flex;
+        background-color: #fff3d4;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
     }
 
     #menu-lista li {
         text-align: center;
         padding: 10px 0;
+        display: flex;
+        justify-content: end;
     }
 
     #menu-area {
@@ -742,6 +746,32 @@ form {
 }
 
 @media (min-width: 376px) and (max-width: 600px) {
+    .hamburguer {
+        display: block;
+    }
+
+    #menu-lista {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: rgb(255, 196, 0);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+    }
+
+    #menu-lista.mostrar {
+        display: flex;
+        background-color: #fff3d4;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+    }
+
+    #menu-lista li {
+        text-align: center;
+        padding: 10px 0;
+    }
     #menu-area {
         background-color: white;
         position: fixed;

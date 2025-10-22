@@ -15,6 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
             validar: v => v.value.trim() === "" || !v.value.includes('@'),
             mensagem: "Digite um E-mail válido!"
         },
+        idade: {
+            value: document.getElementById('idade'),
+            validar: v => v.value < 18,
+            mensagem: "Você deve ter 18 anos ou mais!!"
+        },
         telefone: {
             value: document.getElementById('telefone'),
             validar: v => v.value.trim() === "" || v.value.replace(/\D/g, '').length !== 11,
@@ -23,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const form = document.getElementById('formulario-projeto-padrinho');
+    const container = document.getElementById('container2')
     const mensagemError = document.getElementById('mensagem2')
 
     if (form) {
@@ -46,12 +52,55 @@ document.addEventListener('DOMContentLoaded', () => {
                     form.value.focus();
                     return;
                 }
-
             }
-            mensagemError.innerHTML = "Formulario enviado com sucesso!"
-            mensagemError.style.color = "green";
-    
-            form.reset();
+            
+            emailjs.init({
+                publicKey: "pFy1a_NAJS1ApryAR"
+            });
+
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+
+            const dados = {
+                name: nome,
+                email: email,
+                subject: "Confirmação de apadrinhamento 🐾",
+                mensagem: `Olá ${nome}, Você acaba de se tornar um(a) padrinho(a)! 💖 
+                Muito obrigado por apoiar nossa causa e ajudar os nossos peludinhos 🐶🐾
+
+                    Com carinho,
+                    Equipe Patinhas Felizes 🧡`
+            };
+            console.log("📨 Dados enviados:", dados);
+            const serviceId = "service_n998xdj";
+            const templateID = "template_yrtut6c";
+            console.log(dados);
+            emailjs.send(serviceId, templateID, dados)
+                .then(() => {
+                    console.log("Email enviado com sucesso!");
+                })
+                .catch((error) => {
+                    console.log("Erro ao enviar: " + error.text);
+                });
+
+
+
+            container.innerHTML = `
+            <div style="text-align: center; padding: 2rem;">
+            <h2 style="color: green;">Formulário enviado com sucesso!</h2>
+            <p>Obrigado por se tornar padrinho. Você agora faz parte da nossa comunidade!</p>
+            <button id="voltar" style="padding: 10px 20px; margin-top: 1rem; border-radius: 20px; background-color: #fff3d4;" border:0px;>Voltar ao formulário</button>
+            </div>`
+
+
+
+            const voltar = document.getElementById('voltar');
+            voltar.addEventListener('click', () => {
+                container.innerHTML = ``;
+                form.reset();
+            })
+
+
         })
     }
 })
