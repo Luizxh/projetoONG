@@ -843,9 +843,7 @@ form {
         height: 30vh;
     }
 
-    .texto-center {
-        height: 20vh;
-    }
+   
 
     .texto-center p {
         font-size: 0.8rem;
@@ -966,7 +964,7 @@ form {
 
     #logo-footer {
         height: 15vh;
-        width: 25vw;
+        width: 30vw;
         border-radius: 1em;
         box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
     }
