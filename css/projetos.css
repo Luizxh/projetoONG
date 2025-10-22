@@ -772,6 +772,7 @@ form {
         text-align: center;
         padding: 10px 0;
     }
+
     #menu-area {
         background-color: white;
         position: fixed;
@@ -781,8 +782,8 @@ form {
     }
 
     nav {
-        display: grid;
-        grid-template-columns: 0.1fr 1fr;
+        display: flex;
+        justify-content: space-around;
     }
 
     #img-logo {
