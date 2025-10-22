@@ -844,7 +844,7 @@ form {
     }
 
     .texto-center {
-        height: 15vh;
+        height: 20vh;
     }
 
     .texto-center p {
@@ -854,7 +854,7 @@ form {
 
     #section-area-texto-projetos2 {
         background-color: #fff3d4;
-        height: 55vh;
+        height: 60vh;
         width: 100%;
         display: flex;
         justify-content: center;
