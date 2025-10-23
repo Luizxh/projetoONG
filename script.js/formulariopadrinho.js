@@ -31,15 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('formulario-projeto-padrinho');
     const container = document.getElementById('container2')
     const mensagemError = document.getElementById('mensagem2')
-    const dadosSalvos = JSON.parse(localStorage.getItem('formPadrinho'));
-    if (dadosSalvos) {
-        document.getElementById('nome').value = dadosSalvos.nome || '';
-        document.getElementById('cpf').value = dadosSalvos.cpf || '';
-        document.getElementById('email').value = dadosSalvos.email || '';
-        document.getElementById('idade').value = dadosSalvos.idade || '';
-        document.getElementById('telefone').value = dadosSalvos.telefone || '';
-        console.log("📂 Dados carregados do localStorage:", dadosSalvos);
-    }
+    
     if (form) {
         form.addEventListener('submit', (Event) => {
             Event.preventDefault();

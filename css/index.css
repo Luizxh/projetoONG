@@ -1040,25 +1040,24 @@ nav a:hover {
     }
 
     nav {
-        display: grid;
-        grid-template-columns: 0.1fr 0.6fr;
-        width: 100%;
-    }
-
-    #img-logo {
-        width: 3em;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     nav ul {
-        list-style: none;
-        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     nav a {
-        text-decoration: none;
-        font-size: 1.em;
-        color: #333;
-        margin: 10px;
+        font-size: 15px;
+        margin: 5px 10px;
+    }
+
+    #img-logo {
+        width: 6em;
     }
 
     /* ==========================
