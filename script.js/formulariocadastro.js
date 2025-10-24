@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const form = document.getElementById('form-cadastro');
   const mensagemError = document.getElementById('mensagem');
-  const container = document.getElementById('container'); 
+  const container = document.getElementById('container');
 
   if (form) {
     form.addEventListener("submit", (event) => {
@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
         cpf: document.getElementById('cpfcad').value,
         email: document.getElementById('emailcad').value,
         telefone: document.getElementById('telefonecad').value,
-        endereco:document.getElementById('enderecocad').value,
-        cidade:document.getElementById('cidadecad').value,
+        endereco: document.getElementById('enderecocad').value,
+        cidade: document.getElementById('cidadecad').value,
         estado: document.getElementById('estadocad').value,
       }
       // validação
@@ -72,12 +72,38 @@ document.addEventListener('DOMContentLoaded', () => {
         if (campo.validar(campo.value)) {
           mensagemError.innerHTML = campo.mensagem;
           mensagemError.style.color = "red";
-          campo.value.focus(); 
+          campo.value.focus();
           return;
         }
       }
       localStorage.setItem('DadosCadastro', JSON.stringify(dadosformcad));
       console.log(`dados salvos com sucesso!! ${dadosformcad}`)
+
+      emailjs.init({
+        publicKey: "pFy1a_NAJS1ApryAR"
+      });
+
+      const dados = {
+        nome: nome,
+        email: email,
+        subject: "Cadastro de de voluntário",
+        mensagem: "Aguarde nosso contato: Nossa equipe de coordenação de voluntários entrará em contato em breve para fornecer mais detalhes sobre as próximas etapas, orientações e oportunidades disponíveis."
+      };
+
+      console.log("dados de cadastro enviado!");
+      const serviceId = "service_n998xdj";
+      const templateID = "template_yrtut6c";
+
+      emailjs.send(serviceId, templateID, dados)
+      .then(()=>{
+        console.log("E-mail enviado com sucesso!!")
+      })
+      .catch((error) => {
+        console.log("Erro ao enviar: " + error.text);
+      })
+
+
+
 
       container.innerHTML = `
         <div style="text-align: center; padding: 2rem;">
