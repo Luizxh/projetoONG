@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('formPadrinho', JSON.stringify(dadosFormPadr));
             console.log(" Dados salvos localmente:", dadosFormPadr);
 
-            /* emailjs.init({
+             emailjs.init({
                     publicKey: "pFy1a_NAJS1ApryAR"
                 });
     
@@ -96,7 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     .catch((error) => {
                         console.log("Erro ao enviar: " + error.text);
                     });
-                    */
 
 
             container.innerHTML = `

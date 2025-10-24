@@ -49,8 +49,15 @@ document.addEventListener('DOMContentLoaded', () => {
   if (form) {
     form.addEventListener("submit", (event) => {
       event.preventDefault(); // evita recarregar a página
-  
-
+      const dadosformcad = {
+        nome: document.getElementById('nomecad').value,
+        cpf: document.getElementById('cpfcad').value,
+        email: document.getElementById('emailcad').value,
+        telefone: document.getElementById('telefonecad').value,
+        endereco:document.getElementById('enderecocad').value,
+        cidade:document.getElementById('cidadecad').value,
+        estado: document.getElementById('estadocad').value,
+      }
       // validação
       for (let i in campos) {
         const campo = campos[i];
@@ -69,6 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
           return;
         }
       }
+      localStorage.setItem('DadosCadastro', JSON.stringify(dadosformcad));
+      console.log(`dados salvos com sucesso!! ${dadosformcad}`)
 
       container.innerHTML = `
         <div style="text-align: center; padding: 2rem;">
